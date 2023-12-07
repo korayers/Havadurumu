@@ -26,7 +26,7 @@ namespace Havadurumudeneme2
                     string apiUrl = $"https://goweather.herokuapp.com/weather/{cityName}";
                     var response = client.GetStringAsync(apiUrl).Result;
 
-                    // JSON to CityWeather sınıfına dönüştürüyor
+                    // JSON to CityWeather sınıfına dönüştürür
                     cityWeather = Newtonsoft.Json.JsonConvert.DeserializeObject<CityWeather>(response);
 
                     
